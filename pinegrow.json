@@ -65,7 +65,7 @@
   "urls": {
     "index.html": {
       "open-with-wrapper": false,
-      "open-page-views": [{ "w": 480, "h": 0 }]
+      "open-page-views": [{ "w": 1024, "h": 0 }]
     },
     "src/pages/home.html": {
       "open-with-wrapper": false,
