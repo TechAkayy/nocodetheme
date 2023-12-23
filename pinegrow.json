@@ -64,23 +64,23 @@
       "frameworks": [
         "pg-vite-tailwindcss-wp",
         "pg.insight.events",
+        "pg.asset.manager",
         "pg.tw.lib",
+        "pg.project.items",
         "pg.ia.lib",
+        "pg.code-validator",
         "pg.svg.lib",
         "wordpress.pinegrow",
+        "pg.image.overlay",
         "pg.ia",
         "pg.css.grid",
-        "pg.image.overlay",
-        "pg.code-validator",
-        "pg.project.items",
-        "pg.asset.manager",
         "tw",
         "pg.html",
         "pg.components"
       ]
     }
   },
-  "open-pages": ["index.html"],
+  "open-pages": ["index.html", "pages/parts.html"],
   "urls": {
     "index.html": {
       "open-with-wrapper": false,
@@ -108,17 +108,17 @@
   "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
   "frameworks": [
     "pg-vite-tailwindcss-wp",
-    "wordpress.pinegrow",
-    "pg.svg.lib",
-    "pg.tw.lib",
-    "pg.asset.manager",
-    "pg.project.items",
-    "pg.code-validator",
-    "pg.image.overlay",
-    "pg.css.grid",
-    "pg.ia",
-    "pg.ia.lib",
     "pg.insight.events",
+    "pg.asset.manager",
+    "pg.tw.lib",
+    "pg.project.items",
+    "pg.ia.lib",
+    "pg.code-validator",
+    "pg.svg.lib",
+    "wordpress.pinegrow",
+    "pg.image.overlay",
+    "pg.ia",
+    "pg.css.grid",
     "tw",
     "pg.html",
     "pg.components"
@@ -134,6 +134,7 @@
     "external_help": null
   },
   "recent-classes": [
+    "text-2xl",
     "text-white",
     "text-color3-500",
     "text-secondary-500",
@@ -214,5 +215,14 @@
     ],
     "custom_funcs": ["the_archive_title()"],
     "block_categories": []
+  },
+  "wp-files": {
+    "jsconfig.json": "false",
+    "package-lock.json": "false",
+    "package.json": "false",
+    "postcss.config.cjs": "false",
+    "vite-plugin-pg.js": "false",
+    "vite.config.js": "false",
+    "src": "false"
   }
 }
