@@ -2,7 +2,7 @@
   "files": {
     "index.html": {
       "frameworks": [
-        "pg-vite-tailwindcss-wp",
+        "nocodetheme",
         "wordpress.pinegrow",
         "pg.svg.lib",
         "pg.tw.lib",
@@ -21,7 +21,7 @@
     },
     "home.html": {
       "frameworks": [
-        "pg-vite-tailwindcss-wp",
+        "nocodetheme",
         "pg.tw.lib",
         "my-awesome-lib",
         "pg.asset.manager",
@@ -44,7 +44,7 @@
     },
     "pages/blog.html": {
       "frameworks": [
-        "pg-vite-tailwindcss-wp",
+        "nocodetheme",
         "pg.svg.lib",
         "pg.asset.manager",
         "pg.project.items",
@@ -62,7 +62,7 @@
     },
     "pages/parts.html": {
       "frameworks": [
-        "pg-vite-tailwindcss-wp",
+        "nocodetheme",
         "pg.insight.events",
         "pg.asset.manager",
         "pg.tw.lib",
@@ -107,7 +107,7 @@
   },
   "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
   "frameworks": [
-    "pg-vite-tailwindcss-wp",
+    "nocodetheme",
     "wordpress.pinegrow",
     "pg.svg.lib",
     "pg.tw.lib",
@@ -128,9 +128,9 @@
   "template_framework_id": "vue",
   "design-settings": {
     "mode": "external",
-    "external_source_url": "file:///Users/techakayy/Projects/pg/vite/tailwindcss/pg-vite-tailwindcss-wp/src/assets/css/tailwind.css",
-    "external_config_path": "/Users/techakayy/Projects/pg/vite/tailwindcss/pg-vite-tailwindcss-wp/tailwind.config.js",
-    "external_theme_path": "/Users/techakayy/Projects/pg/vite/tailwindcss/pg-vite-tailwindcss-wp/themes/pg-tailwindcss/tokens.cjs",
+    "external_source_url": "file:///Users/techakayy/Projects/pg/vite/tailwindcss/nocodetheme/src/assets/css/tailwind.css",
+    "external_config_path": "/Users/techakayy/Projects/pg/vite/tailwindcss/nocodetheme/tailwind.config.js",
+    "external_theme_path": "/Users/techakayy/Projects/pg/vite/tailwindcss/nocodetheme/themes/pg-tailwindcss/tokens.cjs",
     "external_help": null
   },
   "recent-classes": [

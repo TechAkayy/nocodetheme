@@ -3,8 +3,8 @@ export default {
   description: 'Pinegrow Vite Tailwind CSS - Quick start template',
   logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
-  url: 'https://pg-vite-tailwindcss-wp.netlify.app',
-  github: 'https://github.com/techakayy/pg-vite-tailwindcss-wp',
+  url: 'https://nocodetheme.netlify.app',
+  github: 'https://github.com/techakayy/nocodetheme',
   defaultLocale: 'en', // default
   identity: {
     type: 'Organization',
