@@ -220,6 +220,7 @@ function pgwp_sanitize_placeholder($input) { return $input; }
 /* Pinegrow generated Include Resources Begin */
 require_once "inc/custom.php";
 if( !class_exists( 'PG_Helper_v2' ) ) { require_once "inc/wp_pg_helpers.php"; }
+if( !class_exists( 'PG_Pagination' ) ) { require_once "inc/wp_pg_pagination.php"; }
 
     /* Pinegrow generated Include Resources End */
 ?>
