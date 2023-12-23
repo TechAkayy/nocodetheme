@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" wp-template wp-template-no-export>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Pinegrow Vite Tailwind CSS - Quick start template</title>
-    <link href="/tailwind_theme/tailwind.css" rel="stylesheet" />
-    <link rel="pg-require" href="projectdb.pgml" />
-    <link rel="pg-require" href="pinegrow.json" />
-    <script>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Pinegrow Vite Tailwind CSS - Quick start template</title>
+        <link href="/tailwind_theme/tailwind.css" rel="stylesheet"/>
+        <link rel="pg-require" href="projectdb.pgml"/>
+        <link rel="pg-require" href="pinegrow.json"/>
+        <script>
       /* Pinegrow Interactions, do not remove */ ;(function () {
         try {
           if (!document.documentElement.hasAttribute('data-pg-ia-disabled')) {
@@ -48,82 +45,57 @@
         }
       })()
     </script>
-  </head>
-  <body>
-    <div
-      class="flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50"
-    >
-      <section data-pg-name="Pagination">
-        <div
-          cms-template-part="template-parts/pagination"
-          cms-template-part-define
-        >
-          <nav
-            class="flex items-center justify-between border-t border-gray-200 px-4 sm:px-0"
-            cms-pagination
-            cms-pagination-fields
-            cms-pagination-prev="> div:nth-of-type(1) > a"
-            cms-pagination-next="> div:nth-of-type(3) > a"
-            cms-pagination-repeat-item="> div:nth-of-type(2) > a"
-            cms-pagination-repeat-item-active-class="border-indigo-500 text-indigo-600"
-            cms-pagination-dots="span"
-          >
-            <div class="-mt-px flex w-0 flex-1">
-              <a
-                href="#"
-                class="inline-flex items-center border-t-2 border-transparent pr-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-              >
-                <svg
-                  class="mr-3 h-5 w-5 text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                Previous
-              </a>
-            </div>
-            <div class="md:-mt-px md:flex">
-              <a
-                href="#"
-                class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                >1</a
-              >
-              <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" --><span
-                class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500"
-                >...</span
-              >
-            </div>
-            <div class="-mt-px flex w-0 flex-1 justify-end">
-              <a
-                href="#"
-                class="inline-flex items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-              >
-                Next
-                <svg
-                  class="ml-3 h-5 w-5 text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </a>
-            </div>
-          </nav>
+    </head>
+    <body>
+        <div class="flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50">
+            <section data-pg-name="Sidebar">
+                <div cms-template-part="template-parts/sidebar" cms-template-part-define>
+                    <div>
+                        <h3 class="font-bold text-2xl text-gray-900 tracking-tight" "">Categories</h3>
+                        <ul role="list" class="divide-y divide-gray-100">
+                            <li class="flex gap-x-4 py-3">
+                                <div class="min-w-0">
+                                    <a cms-site-terms="category" cms-site-terms-order="count DESC" cms-site-terms-range="0-9"><span class="text-sm font-semibold leading-6 text-gray-900">Leslie Alexander</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6">
+                        <h3 class="font-bold text-2xl text-gray-900 tracking-tight" "">Tags</h3>
+                        <ul role="list" class="divide-y divide-gray-100">
+                            <li class="flex gap-x-4 py-3">
+                                <div class="min-w-0">
+                                    <a cms-site-terms="post_tag" cms-site-terms-order="count DESC" cms-site-terms-range="0-9"><span class="text-sm font-semibold leading-6 text-gray-900">Leslie Alexander</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section data-pg-name="Pagination">
+                <div cms-template-part="template-parts/pagination" cms-template-part-define>
+                    <nav class="flex items-center justify-between border-t border-gray-200 px-4 sm:px-0" cms-pagination cms-pagination-fields cms-pagination-prev="> div:nth-of-type(1) > a" cms-pagination-next="> div:nth-of-type(3) > a" cms-pagination-repeat-item="> div:nth-of-type(2) > a" cms-pagination-repeat-item-active-class="border-indigo-500 text-indigo-600" cms-pagination-dots="span">
+                        <div class="-mt-px flex w-0 flex-1">
+                            <a href="#" class="inline-flex items-center border-t-2 border-transparent pr-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"> <svg class="mr-3 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clip-rule="evenodd"/>
+                                </svg>
+                Previous </a>
+                        </div>
+                        <div class="md:-mt-px md:flex">
+                            <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">1</a>
+                            <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" --><span class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500">...</span>
+                        </div>
+                        <div class="-mt-px flex w-0 flex-1 justify-end">
+                            <a href="#" class="inline-flex items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                Next <svg class="ml-3 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd"/>
+                                </svg> </a>
+                        </div>
+                    </nav>
+                </div>
+            </section>
         </div>
-      </section>
-    </div>
-    <script src="/tailwind_theme/pgia/lib/pgia.js"></script>
-    <script src="/tailwind_theme/js/main.js"></script>
-  </body>
+        <script src="/tailwind_theme/pgia/lib/pgia.js"></script>
+        <script src="/tailwind_theme/js/main.js"></script>
+    </body>
 </html>
