@@ -157,7 +157,7 @@
     "slug": "my_first_wp_theme",
     "url": "${my_first_wp_theme_url}",
     "project_version": "0.0.3",
-    "auto_increment_version": "1",
+    "auto_increment_version": "0",
     "page": "index.html",
     "themejson": "true",
     "wpseo": "true",
