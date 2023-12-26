@@ -67,11 +67,12 @@
             </h1>
             <ul role="list" class="mt-8 max-w-xl text-gray-600">
               <li class="flex gap-x-2">
-                <span>Posted on: </span><span cms-post-date> publish date</span>
+                <span>Posted on: </span>
+                <span cms-post-date> publish date</span>
               </li>
               <li class="flex gap-x-2">
-                <span>Author:</span
-                ><a
+                <span>Author:</span>
+                <a
                   cms-author-field="display_name"
                   cms-author-field-type="content"
                   cms-author-field-2="posts_url"
@@ -81,8 +82,8 @@
                 >
               </li>
               <li class="flex gap-x-2" wp-if-in-category="!Uncategorized">
-                <span>Departments:</span
-                ><a
+                <span>Departments:</span>
+                <a
                   cms-tags="departments"
                   cms-tags-display="this"
                   cms-tags-delimiter=", "
@@ -91,8 +92,8 @@
                 >
               </li>
               <li class="flex gap-x-2" wp-if-has-tag>
-                <span>Tags:</span
-                ><a
+                <span>Tags:</span>
+                <a
                   cms-tags="post_tag"
                   cms-tags-display="this"
                   cms-tags-delimiter=", "
@@ -124,7 +125,7 @@
             class="border-gray-200 border-t max-w-xl mt-10 mx-auto py-10 w-full sm:pt-16 md:w-full lg:grid-cols-3 lg:max-w-none lg:mt-0 lg:mx-0 lg:pl-10 lg:pr-0 lg:w-1/4"
           >
             <!-- More posts... -->
-            <div cms-template-part="template-parts/sidebar">
+            <div cms-template-part="template-parts/employees-sidebar">
               Sidebar template part
             </div>
           </div>

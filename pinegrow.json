@@ -368,6 +368,25 @@
       "frameworks": [
         "nocodetheme",
         "pg.tw.lib",
+        "pg.asset.manager",
+        "pg.svg.lib",
+        "pg.project.items",
+        "pg.insight.events",
+        "pg.code-validator",
+        "pg.ia.lib",
+        "wordpress.pinegrow",
+        "pg.image.overlay",
+        "pg.ia",
+        "pg.css.grid",
+        "tw",
+        "pg.html",
+        "pg.components"
+      ]
+    },
+    "archive-employees.html": {
+      "frameworks": [
+        "nocodetheme",
+        "pg.tw.lib",
         "pg.svg.lib",
         "pg.insight.events",
         "pg.ia.lib",
@@ -473,22 +492,26 @@
     "single-employees.html": {
       "open-with-wrapper": false,
       "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "archive-employees.html": {
+      "open-with-wrapper": false,
+      "open-page-views": [{ "w": 1024, "h": 0 }]
     }
   },
   "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
   "frameworks": [
     "nocodetheme",
+    "wordpress.pinegrow",
+    "pg.svg.lib",
     "pg.tw.lib",
     "pg.asset.manager",
-    "pg.svg.lib",
     "pg.project.items",
-    "pg.insight.events",
     "pg.code-validator",
-    "pg.ia.lib",
-    "wordpress.pinegrow",
     "pg.image.overlay",
-    "pg.ia",
     "pg.css.grid",
+    "pg.ia.lib",
+    "pg.insight.events",
+    "pg.ia",
     "tw",
     "pg.html",
     "pg.components"
@@ -504,6 +527,7 @@
     "external_help": null
   },
   "recent-classes": [
+    "py-1.5",
     "visited:text-purple-600",
     "hover:text-blue-800",
     "text-blue-600",
@@ -600,12 +624,13 @@
     ],
     "post_types": ["attachment", "employees", "page", "post"],
     "template_parts": [
+      "template-parts/employees-sidebar",
       "template-parts/pagination",
       "template-parts/sidebar",
       "template-parts/social-icons"
     ],
     "sidebars": ["company-information"],
-    "master_pages": [],
+    "master_pages": ["archive-employees"],
     "image_sizes": [
       "full",
       "large",
