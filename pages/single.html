@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" wp-template wp-template-export-as="single.php">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Pinegrow Vite Tailwind CSS - Quick start template</title>
+    <link href="/tailwind_theme/tailwind.css" rel="stylesheet" />
+    <link rel="pg-require" href="projectdb.pgml" />
+    <link rel="pg-require" href="pinegrow.json" />
+    <script>
+      /* Pinegrow Interactions, do not remove */ ;(function () {
+        try {
+          if (!document.documentElement.hasAttribute('data-pg-ia-disabled')) {
+            window.pgia_small_mq =
+              typeof pgia_small_mq == 'string'
+                ? pgia_small_mq
+                : '(max-width:767px)'
+            window.pgia_large_mq =
+              typeof pgia_large_mq == 'string'
+                ? pgia_large_mq
+                : '(min-width:768px)'
+            var style = document.createElement('style')
+            var pgcss =
+              'html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}'
+            if (
+              document.documentElement.hasAttribute('data-pg-id') &&
+              document.documentElement.hasAttribute('data-pg-mobile')
+            ) {
+              pgia_small_mq = '(min-width:0)'
+              pgia_large_mq = '(min-width:99999px)'
+            }
+            pgcss +=
+              '@media ' +
+              pgia_small_mq +
+              '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}'
+            pgcss +=
+              '@media ' +
+              pgia_large_mq +
+              '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}'
+            style.innerHTML = pgcss
+            document.querySelector('head').appendChild(style)
+          }
+        } catch (e) {
+          console && console.log(e)
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div
+      class="bg-white dark:bg-neutral-950 dark:text-neutral-50 flex flex-col py-24 text-neutral-900 sm:py-32"
+      wp-site-content
+    >
+      <main cms-post="loop">
+        <div
+          class="bg-white container flex flex-wrap px-6 py-32 lg:flex-nowrap mx-auto"
+        >
+          <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+            <h1
+              class="font-bold mt-2 text-3xl text-gray-900 text-indigo-600 tracking-tight sm:text-4xl"
+              cms-post-title
+            >
+              JavaScript for Beginners
+            </h1>
+            <ul role="list" class="mt-8 max-w-xl text-gray-600">
+              <li class="flex gap-x-2">
+                <span>Posted on: </span><span cms-post-date> publish date</span>
+              </li>
+              <li class="flex gap-x-2">
+                <span>Author:</span
+                ><span
+                  cms-author-field="display_name"
+                  cms-author-field-type="content"
+                  cms-author-field-2="posts_url"
+                  cms-author-field-type-2="link"
+                  >author name</span
+                >
+              </li>
+              <li class="flex gap-x-2" wp-if-in-category="!Uncategorized">
+                <span>Categories:</span
+                ><span
+                  cms-tags="category"
+                  cms-tags-display="this"
+                  cms-tags-delimiter=", "
+                  >category list</span
+                >
+              </li>
+              <li class="flex gap-x-2" wp-if-has-tag>
+                <span>Tags:</span
+                ><span
+                  cms-tags="post_tag"
+                  cms-tags-display="this"
+                  cms-tags-delimiter=", "
+                  >tag list</span
+                >
+              </li>
+            </ul>
+            <figure class="my-4" wp-if-has-post-thumbnail>
+              <img
+                class="aspect-video rounded-xl bg-gray-50 object-cover"
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
+                alt=""
+                cms-post-image="full"
+              />
+            </figure>
+            <div class="max-w-2xl mt-4">
+              <p class="mt-6" cms-post-content>
+                Purus morbi dignissim senectus mattis adipiscing. Amet, massa
+                quam varius orci dapibus volutpat cras. In amet eu ridiculus leo
+                sodales cursus tristique. Tincidunt sed tempus ut viverra
+                ridiculus non molestie. Gravida quis fringilla amet eget dui
+                tempor dignissim. Facilisis auctor venenatis varius nunc, congue
+                erat ac. Cras fermentum convallis quam.
+              </p>
+            </div>
+          </div>
+          <div
+            class="border-gray-200 border-t max-w-xl mt-10 mx-auto py-10 w-full sm:pt-16 md:w-full lg:grid-cols-3 lg:max-w-none lg:mt-0 lg:mx-0 lg:pl-10 lg:pr-0 lg:w-1/4"
+          >
+            <!-- More posts... -->
+            <div cms-template-part="template-parts/sidebar"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/tailwind_theme/pgia/lib/pgia.js"></script>
+    <script src="/tailwind_theme/js/main.js"></script>
+  </body>
+</html>
