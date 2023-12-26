@@ -12,6 +12,44 @@ if(strpos($_SERVER['REQUEST_URI'], '/wp-admin/admin.php?page=pinegrow-projects')
 if( $pinegrow_run_code ) :
 
 /* End - Prevent broken project from crashing the Pinegrow editor */            
+
+/* Creating Editor Blocks with Pinegrow */
+
+if ( ! function_exists('nocodetheme_blocks_init') ) :
+function nocodetheme_blocks_init() {
+    // Register blocks. Don't edit anything between the following comments.
+    /* Pinegrow generated Register Pinegrow Blocks Begin */
+    require_once 'blocks/employee-grid/employee-grid_register.php';
+    require_once 'blocks/contact-form/contact-form_register.php';
+
+    /* Pinegrow generated Register Pinegrow Blocks End */
+}
+add_action('init', 'nocodetheme_blocks_init');
+endif;
+
+/* End of creating Editor Blocks with Pinegrow */
+
+
+/* Register Blocks Categories */
+
+function nocodetheme_register_blocks_categories( $categories ) {
+
+    // Don't edit anything between the following comments.
+    /* Pinegrow generated Register Blocks Category Begin */
+
+$categories = array_merge( $categories, array( array(
+        'slug' => 'custom-blocks',
+        'title' => __( 'Custom Blocks', 'nocodetheme' )
+    ) ) );
+
+    /* Pinegrow generated Register Blocks Category End */
+    
+    return $categories;
+}
+add_action( version_compare('5.8', get_bloginfo('version'), '<=' ) ? 'block_categories_all' : 'block_categories', 'nocodetheme_register_blocks_categories');
+
+/* End of registering Blocks Categories */
+
 ?><?php
 if ( ! function_exists( 'my_first_wp_theme_setup' ) ) :
 
@@ -98,6 +136,19 @@ function my_first_wp_theme_init() {
      * Register custom post types. You can also move this code to a plugin.
      */
     /* Pinegrow generated Custom Post Types Begin */
+
+    register_post_type('contact_form', array(
+        'labels' => 
+            array(
+                'name' => __( 'Contact Form Entries', 'nocodetheme' ),
+                'singular_name' => __( 'Contact Form Entry', 'nocodetheme' )
+            ),
+        'public' => false,
+        'supports' => array( 'title', 'editor', 'author' ),
+        'show_in_rest' => false,
+        'show_ui' => true,
+        'show_in_menu' => true
+    ));
 
     register_post_type('employees', array(
         'labels' => 
@@ -341,6 +392,8 @@ function pgwp_sanitize_placeholder($input) { return $input; }
 require_once "inc/custom.php";
 if( !class_exists( 'PG_Helper_v2' ) ) { require_once "inc/wp_pg_helpers.php"; }
 if( !class_exists( 'PG_Smart_Walker_Nav_Menu' ) ) { require_once "inc/wp_smart_navwalker.php"; }
+if( !class_exists( 'PG_Blocks_v2' ) ) { require_once "inc/wp_pg_blocks_helpers.php"; }
+if( !class_exists( 'PG_Simple_Form_Mailer' ) ) { require_once "inc/wp_simple_form_mailer.php"; }
 if( !class_exists( 'PG_Pagination' ) ) { require_once "inc/wp_pg_pagination.php"; }
 
     /* Pinegrow generated Include Resources End */

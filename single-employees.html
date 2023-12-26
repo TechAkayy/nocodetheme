@@ -67,12 +67,11 @@
             </h1>
             <ul role="list" class="mt-8 max-w-xl text-gray-600">
               <li class="flex gap-x-2">
-                <span>Posted on: </span>
-                <span cms-post-date> publish date</span>
+                <span>Posted on: </span><span cms-post-date> publish date</span>
               </li>
               <li class="flex gap-x-2">
-                <span>Author:</span>
-                <a
+                <span>Author:</span
+                ><a
                   cms-author-field="display_name"
                   cms-author-field-type="content"
                   cms-author-field-2="posts_url"
@@ -82,8 +81,8 @@
                 >
               </li>
               <li class="flex gap-x-2" wp-if-in-category="!Uncategorized">
-                <span>Departments:</span>
-                <a
+                <span>Departments:</span
+                ><a
                   cms-tags="departments"
                   cms-tags-display="this"
                   cms-tags-delimiter=", "
@@ -92,8 +91,8 @@
                 >
               </li>
               <li class="flex gap-x-2" wp-if-has-tag>
-                <span>Tags:</span>
-                <a
+                <span>Tags:</span
+                ><a
                   cms-tags="post_tag"
                   cms-tags-display="this"
                   cms-tags-delimiter=", "
@@ -105,9 +104,16 @@
             <figure class="my-4" wp-if-has-post-thumbnail>
               <img
                 class="aspect-video rounded-xl bg-gray-50 object-cover"
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
+                src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
                 alt=""
                 cms-post-image="full"
+              />
+            </figure>
+            <figure class="my-4" wp-if-has-post-thumbnail="!">
+              <img
+                class="aspect-video rounded-xl bg-gray-50 object-cover"
+                src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                alt=""
               />
             </figure>
             <div class="max-w-2xl mt-4">
