@@ -29,10 +29,6 @@ export default defineConfig({
           page: './index.html',
           entry: './src/main.js',
         },
-        {
-          page: './pages/blog.html',
-          entry: './src/main.js',
-        },
       ],
     }),
   ],
