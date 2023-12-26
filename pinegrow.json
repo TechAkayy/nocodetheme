@@ -422,7 +422,7 @@
       ]
     }
   },
-  "open-pages": [],
+  "open-pages": ["index.html", "pages/blocks.html"],
   "urls": {
     "index.html": {
       "open-with-wrapper": false,
@@ -518,7 +518,7 @@
     },
     "pages/blocks.html": {
       "open-with-wrapper": false,
-      "open-page-views": [{ "w": 1024, "h": 0 }]
+      "open-page-views": [{ "w": 768, "h": 0 }]
     }
   },
   "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
