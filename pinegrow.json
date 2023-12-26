@@ -178,16 +178,16 @@
       "frameworks": [
         "nocodetheme",
         "pg.tw.lib",
+        "pg.asset.manager",
         "pg.svg.lib",
+        "pg.project.items",
         "pg.insight.events",
+        "pg.code-validator",
         "pg.ia.lib",
         "wordpress.pinegrow",
+        "pg.image.overlay",
         "pg.ia",
         "pg.css.grid",
-        "pg.image.overlay",
-        "pg.code-validator",
-        "pg.project.items",
-        "pg.asset.manager",
         "tw",
         "pg.html",
         "pg.components"
@@ -232,6 +232,139 @@
       ]
     },
     "404.html": {
+      "frameworks": [
+        "nocodetheme",
+        "pg.tw.lib",
+        "pg.svg.lib",
+        "pg.insight.events",
+        "pg.ia.lib",
+        "wordpress.pinegrow",
+        "pg.ia",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html",
+        "pg.components"
+      ]
+    },
+    "pages/about.html": {
+      "frameworks": [
+        "nocodetheme",
+        "pg.tw.lib",
+        "pg.svg.lib",
+        "pg.insight.events",
+        "pg.ia.lib",
+        "wordpress.pinegrow",
+        "pg.ia",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html",
+        "pg.components"
+      ]
+    },
+    "pages/articles.html": {
+      "frameworks": [
+        "nocodetheme",
+        "pg.tw.lib",
+        "pg.asset.manager",
+        "pg.svg.lib",
+        "pg.project.items",
+        "pg.insight.events",
+        "pg.code-validator",
+        "pg.ia.lib",
+        "wordpress.pinegrow",
+        "pg.image.overlay",
+        "pg.ia",
+        "pg.css.grid",
+        "tw",
+        "pg.html",
+        "pg.components"
+      ]
+    },
+    "pages/contact.html": {
+      "frameworks": [
+        "nocodetheme",
+        "pg.tw.lib",
+        "pg.svg.lib",
+        "pg.insight.events",
+        "pg.ia.lib",
+        "wordpress.pinegrow",
+        "pg.ia",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html",
+        "pg.components"
+      ]
+    },
+    "pages/employees.html": {
+      "frameworks": [
+        "nocodetheme",
+        "pg.tw.lib",
+        "pg.asset.manager",
+        "pg.svg.lib",
+        "pg.project.items",
+        "pg.insight.events",
+        "pg.code-validator",
+        "pg.ia.lib",
+        "wordpress.pinegrow",
+        "pg.image.overlay",
+        "pg.ia",
+        "pg.css.grid",
+        "tw",
+        "pg.html",
+        "pg.components"
+      ]
+    },
+    "pages/services.html": {
+      "frameworks": [
+        "nocodetheme",
+        "pg.tw.lib",
+        "pg.svg.lib",
+        "pg.insight.events",
+        "pg.ia.lib",
+        "wordpress.pinegrow",
+        "pg.ia",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html",
+        "pg.components"
+      ]
+    },
+    "pages/single-employees.html": {
+      "frameworks": [
+        "nocodetheme",
+        "pg.tw.lib",
+        "pg.svg.lib",
+        "pg.insight.events",
+        "pg.ia.lib",
+        "wordpress.pinegrow",
+        "pg.ia",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html",
+        "pg.components"
+      ]
+    },
+    "single-employees.html": {
       "frameworks": [
         "nocodetheme",
         "pg.tw.lib",
@@ -311,6 +444,35 @@
     "404.html": {
       "open-with-wrapper": false,
       "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "pages/about.html": {
+      "open-with-wrapper": false,
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "pages/articles.html": {
+      "open-with-wrapper": false,
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "pages/contact.html": {
+      "open-with-wrapper": false,
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "pages/employees.html": {
+      "open-with-wrapper": false,
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "pages/my-template.html": { "open-with-wrapper": false },
+    "pages/services.html": {
+      "open-with-wrapper": false,
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "pages/single-employees.html": {
+      "open-with-wrapper": false,
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "single-employees.html": {
+      "open-with-wrapper": false,
+      "open-page-views": [{ "w": 1024, "h": 0 }]
     }
   },
   "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
@@ -342,6 +504,10 @@
     "external_help": null
   },
   "recent-classes": [
+    "visited:text-purple-600",
+    "hover:text-blue-800",
+    "text-blue-600",
+    "underline",
     "sm:py-32",
     "py-24",
     "mx-auto",
