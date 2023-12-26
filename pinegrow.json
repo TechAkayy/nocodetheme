@@ -80,11 +80,11 @@
       ]
     }
   },
-  "open-pages": ["index.html", "pages/parts.html"],
+  "open-pages": ["index.html"],
   "urls": {
     "index.html": {
       "open-with-wrapper": false,
-      "open-page-views": [{ "w": 1024, "h": 0 }]
+      "open-page-views": [{ "w": 480, "h": 0 }]
     },
     "src/pages/home.html": {
       "open-with-wrapper": false,
@@ -134,6 +134,8 @@
     "external_help": null
   },
   "recent-classes": [
+    "lg:hidden",
+    "h-16",
     "text-xl",
     "text-2xl",
     "text-white",
@@ -203,7 +205,7 @@
     "customizer_sections": [],
     "customizer_controls": [],
     "post_types": ["attachment", "page", "post"],
-    "template_parts": ["template-parts/pagination"],
+    "template_parts": ["template-parts/pagination", "template-parts/sidebar"],
     "sidebars": [],
     "master_pages": [],
     "image_sizes": [
