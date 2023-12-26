@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" wp-template wp-template-export-as="page.php">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Pinegrow Vite Tailwind CSS - Quick start template</title>
-    <link href="/tailwind_theme/tailwind.css" rel="stylesheet" />
-    <link rel="pg-require" href="projectdb.pgml" />
-    <link rel="pg-require" href="pinegrow.json" />
-    <script>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Pinegrow Vite Tailwind CSS - Quick start template</title>
+        <link href="/tailwind_theme/tailwind.css" rel="stylesheet"/>
+        <link rel="pg-require" href="projectdb.pgml"/>
+        <link rel="pg-require" href="pinegrow.json"/>
+        <script>
       /* Pinegrow Interactions, do not remove */ ;(function () {
         try {
           if (!document.documentElement.hasAttribute('data-pg-ia-disabled')) {
@@ -48,35 +45,29 @@
         }
       })()
     </script>
-  </head>
-  <body>
-    <div
-      class="bg-white dark:bg-neutral-950 dark:text-neutral-50 flex flex-col text-neutral-900"
-      wp-site-content
-    >
-      <main class="container mx-auto lg:my-16">
-        <div cms-post="loop">
-          <header>
-            <h1 cms-post-title>Page title</h1>
-          </header>
-          <div cms-post-content class="lg:mt-10">
-            <p>
+    </head>
+    <body>
+        <div class="bg-white dark:bg-neutral-950 dark:text-neutral-50 flex flex-col text-neutral-900" wp-site-content>
+            <main class="container mx-auto my-16">
+                <div cms-post="loop">
+                    <header>
+                        <h1 cms-post-title>Page title</h1>
+                    </header>
+                    <div cms-post-content class="lg:mt-10">
+                        <p>
               This is a paragraph, one or more lines of text. Each paragraph is
-              displayed in a new line.
-            </p>
-            <p>
+              displayed in a new line. </p>
+                        <p>
               This is a paragraph, one or more lines of text. Each paragraph is
-              displayed in a new line.
-            </p>
-            <p>
+              displayed in a new line. </p>
+                        <p>
               This is a paragraph, one or more lines of text. Each paragraph is
-              displayed in a new line.
-            </p>
-          </div>
+              displayed in a new line. </p>
+                    </div>
+                </div>
+            </main>
         </div>
-      </main>
-    </div>
-    <script src="/tailwind_theme/pgia/lib/pgia.js"></script>
-    <script src="/tailwind_theme/js/main.js"></script>
-  </body>
+        <script src="/tailwind_theme/pgia/lib/pgia.js"></script>
+        <script src="/tailwind_theme/js/main.js"></script>
+    </body>
 </html>
