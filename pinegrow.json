@@ -422,7 +422,7 @@
       ]
     }
   },
-  "open-pages": ["pages/blocks.html"],
+  "open-pages": [],
   "urls": {
     "index.html": {
       "open-with-wrapper": false,
