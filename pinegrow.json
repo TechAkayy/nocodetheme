@@ -400,10 +400,10 @@
     "py-4"
   ],
   "wp-theme-info": {
-    "dir": "${my_first_wp_theme}",
-    "name": "My First WP Theme",
-    "slug": "my_first_wp_theme",
-    "url": "${my_first_wp_theme_url}",
+    "dir": "${nocodetheme}",
+    "name": "nocodetheme",
+    "slug": "nocodetheme",
+    "url": "${nocodetheme_url}",
     "project_version": "0.0.3",
     "auto_increment_version": "0",
     "page": "index.html",

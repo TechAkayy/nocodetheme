@@ -1,4 +1,18 @@
 <?php
+$pinegrow_run_code = true;
+
+/* Begin - Prevent broken project from crashing the Pinegrow editor */
+if(defined('DOING_AJAX') && DOING_AJAX && !empty($_REQUEST['action']) && strpos($_REQUEST['action'], 'pinegrow_api') === 0) {
+    $pinegrow_run_code = false; //do not run during Pinegrow API calls
+}
+if(strpos($_SERVER['REQUEST_URI'], '/wp-admin/admin.php?page=pinegrow-projects') === 0 || strpos($_SERVER['REQUEST_URI'], '/wp-login') === 0 || (strpos($_SERVER['REQUEST_URI'], '/wp-admin/plugins.php') === 0 && strpos($_SERVER['REQUEST_URI'], '/wp-admin/plugins.php?action=activate') === false)) {
+    //do not load when editor is loading, during login and plugin manipulation in admin, except when plugin is being activated
+    $pinegrow_run_code = false;
+}
+if( $pinegrow_run_code ) :
+
+/* End - Prevent broken project from crashing the Pinegrow editor */            
+?><?php
 if ( ! function_exists( 'my_first_wp_theme_setup' ) ) :
 
 function my_first_wp_theme_setup() {
@@ -8,7 +22,7 @@ function my_first_wp_theme_setup() {
      * Translations can be filed in the /languages/ directory.
      */
     /* Pinegrow generated Load Text Domain Begin */
-    load_theme_textdomain( 'my_first_wp_theme', get_template_directory() . '/languages' );
+    load_theme_textdomain( 'nocodetheme', get_template_directory() . '/languages' );
     /* Pinegrow generated Load Text Domain End */
 
     // Add default posts and comments RSS feed links to head.
@@ -127,7 +141,7 @@ function my_first_wp_theme_widgets_init() {
     /* Pinegrow generated Register Sidebars Begin */
 
     register_sidebar( array(
-        'name' => __( 'Company Information', 'my_first_wp_theme' ),
+        'name' => __( 'Company Information', 'nocodetheme' ),
         'id' => 'company-information',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
@@ -150,7 +164,7 @@ function my_first_wp_theme_customize_register( $wp_customize ) {
     /* Pinegrow generated Customizer Controls Begin */
 
     $wp_customize->add_section( 'social_links', array(
-        'title' => __( 'Social Links', 'my_first_wp_theme' )
+        'title' => __( 'Social Links', 'nocodetheme' )
     ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
 
@@ -160,7 +174,7 @@ function my_first_wp_theme_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'logo_light', array(
-        'label' => __( 'Light Logo', 'my_first_wp_theme' ),
+        'label' => __( 'Light Logo', 'nocodetheme' ),
         'type' => 'media',
         'mime_type' => 'image',
         'section' => 'title_tagline'
@@ -172,7 +186,7 @@ function my_first_wp_theme_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'facebook_link', array(
-        'label' => __( 'Facebook', 'my_first_wp_theme' ),
+        'label' => __( 'Facebook', 'nocodetheme' ),
         'type' => 'url',
         'section' => 'social_links'
     ));
@@ -183,7 +197,7 @@ function my_first_wp_theme_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'instagram_link', array(
-        'label' => __( 'Instagram', 'my_first_wp_theme' ),
+        'label' => __( 'Instagram', 'nocodetheme' ),
         'type' => 'url',
         'section' => 'social_links'
     ));
@@ -194,7 +208,7 @@ function my_first_wp_theme_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'twitter_link', array(
-        'label' => __( 'Twitter', 'my_first_wp_theme' ),
+        'label' => __( 'Twitter', 'nocodetheme' ),
         'type' => 'url',
         'section' => 'social_links'
     ));
@@ -205,7 +219,7 @@ function my_first_wp_theme_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'github_link', array(
-        'label' => __( 'Github', 'my_first_wp_theme' ),
+        'label' => __( 'Github', 'nocodetheme' ),
         'type' => 'url',
         'section' => 'social_links'
     ));
@@ -216,7 +230,7 @@ function my_first_wp_theme_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'youtube_link', array(
-        'label' => __( 'Youtube', 'my_first_wp_theme' ),
+        'label' => __( 'Youtube', 'nocodetheme' ),
         'type' => 'url',
         'section' => 'social_links'
     ));
@@ -272,21 +286,21 @@ if ( ! function_exists( 'my_first_wp_theme_enqueue_scripts' ) ) :
         }
       })()');
 
-    wp_deregister_script( 'my_first_wp_theme-pgia' );
-    wp_enqueue_script( 'my_first_wp_theme-pgia', get_template_directory_uri() . '/tailwind_theme/pgia/lib/pgia.js', [], '0.0.3', true);
+    wp_deregister_script( 'nocodetheme-pgia' );
+    wp_enqueue_script( 'nocodetheme-pgia', get_template_directory_uri() . '/tailwind_theme/pgia/lib/pgia.js', [], '0.0.3', true);
 
-    wp_deregister_script( 'my_first_wp_theme-main' );
-    wp_enqueue_script( 'my_first_wp_theme-main', get_template_directory_uri() . '/tailwind_theme/js/main.js', [], '0.0.3', true);
+    wp_deregister_script( 'nocodetheme-main' );
+    wp_enqueue_script( 'nocodetheme-main', get_template_directory_uri() . '/tailwind_theme/js/main.js', [], '0.0.3', true);
 
     /* Pinegrow generated Enqueue Scripts End */
 
         /* Pinegrow generated Enqueue Styles Begin */
 
-    wp_deregister_style( 'my_first_wp_theme-tailwind' );
-    wp_enqueue_style( 'my_first_wp_theme-tailwind', get_template_directory_uri() . '/tailwind_theme/tailwind.css', [], '0.0.3', 'all');
+    wp_deregister_style( 'nocodetheme-tailwind' );
+    wp_enqueue_style( 'nocodetheme-tailwind', get_template_directory_uri() . '/tailwind_theme/tailwind.css', [], '0.0.3', 'all');
 
-    wp_deregister_style( 'my_first_wp_theme-style' );
-    wp_enqueue_style( 'my_first_wp_theme-style', get_bloginfo('stylesheet_url'), [], '0.0.3', 'all');
+    wp_deregister_style( 'nocodetheme-style' );
+    wp_enqueue_style( 'nocodetheme-style', get_bloginfo('stylesheet_url'), [], '0.0.3', 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 
@@ -305,4 +319,5 @@ if( !class_exists( 'PG_Smart_Walker_Nav_Menu' ) ) { require_once "inc/wp_smart_n
 if( !class_exists( 'PG_Pagination' ) ) { require_once "inc/wp_pg_pagination.php"; }
 
     /* Pinegrow generated Include Resources End */
-?>
+?><?php
+endif; //end if ( $pinegrow_run_plugin )
