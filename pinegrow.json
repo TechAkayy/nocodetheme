@@ -68,23 +68,61 @@
         "pg.tw.lib",
         "pg.project.items",
         "pg.code-validator",
-        "pg.ia.lib",
-        "pg.svg.lib",
         "pg.image.overlay",
+        "pg.svg.lib",
         "pg.css.grid",
+        "pg.ia.lib",
+        "pg.ia",
+        "wordpress.pinegrow",
+        "tw",
+        "pg.html",
+        "pg.components"
+      ]
+    },
+    "pages/customizer.html": {
+      "frameworks": [
+        "nocodetheme",
+        "pg.tw.lib",
+        "pg.svg.lib",
+        "pg.insight.events",
+        "pg.ia.lib",
         "wordpress.pinegrow",
         "pg.ia",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html",
+        "pg.components"
+      ]
+    },
+    "pages/utilities.html": {
+      "frameworks": [
+        "nocodetheme",
+        "pg.tw.lib",
+        "pg.svg.lib",
+        "pg.insight.events",
+        "pg.ia.lib",
+        "wordpress.pinegrow",
+        "pg.ia",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
         "tw",
         "pg.html",
         "pg.components"
       ]
     }
   },
-  "open-pages": ["index.html"],
+  "open-pages": [],
   "urls": {
     "index.html": {
       "open-with-wrapper": false,
-      "open-page-views": [{ "w": 480, "h": 0 }]
+      "open-page-views": [{ "w": 1024, "h": 0 }]
     },
     "src/pages/home.html": {
       "open-with-wrapper": false,
@@ -102,23 +140,31 @@
     },
     "pages/parts.html": {
       "open-with-wrapper": false,
-      "open-page-views": [{ "w": 480, "h": 0 }]
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "pages/customizer.html": {
+      "open-with-wrapper": false,
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "pages/utilities.html": {
+      "open-with-wrapper": false,
+      "open-page-views": [{ "w": 1024, "h": 0 }]
     }
   },
   "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
   "frameworks": [
     "nocodetheme",
-    "wordpress.pinegrow",
-    "pg.svg.lib",
-    "pg.tw.lib",
+    "pg.insight.events",
     "pg.asset.manager",
+    "pg.tw.lib",
     "pg.project.items",
     "pg.code-validator",
     "pg.image.overlay",
+    "pg.svg.lib",
     "pg.css.grid",
     "pg.ia.lib",
-    "pg.insight.events",
     "pg.ia",
+    "wordpress.pinegrow",
     "tw",
     "pg.html",
     "pg.components"
@@ -134,6 +180,12 @@
     "external_help": null
   },
   "recent-classes": [
+    "h-full",
+    "w-full",
+    "text-gray-300",
+    "lg:text-white",
+    "space-x-1",
+    "h-32",
     "lg:hidden",
     "h-16",
     "text-xl",
@@ -202,11 +254,22 @@
   "wp-insight": {
     "menus": ["primary", "social"],
     "taxonomies": ["category", "post_tag"],
-    "customizer_sections": [],
-    "customizer_controls": [],
+    "customizer_sections": ["social_links"],
+    "customizer_controls": [
+      "facebook_link",
+      "github_link",
+      "instagram_link",
+      "logo_light",
+      "twitter_link",
+      "youtube_link"
+    ],
     "post_types": ["attachment", "page", "post"],
-    "template_parts": ["template-parts/pagination", "template-parts/sidebar"],
-    "sidebars": [],
+    "template_parts": [
+      "template-parts/pagination",
+      "template-parts/sidebar",
+      "template-parts/social-icons"
+    ],
+    "sidebars": ["company-information"],
     "master_pages": [],
     "image_sizes": [
       "full",

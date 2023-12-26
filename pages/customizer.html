@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" wp-template wp-template-no-export>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Pinegrow Vite Tailwind CSS - Quick start template</title>
+    <link href="/tailwind_theme/tailwind.css" rel="stylesheet" />
+    <link rel="pg-require" href="projectdb.pgml" />
+    <link rel="pg-require" href="pinegrow.json" />
+    <script>
+      /* Pinegrow Interactions, do not remove */ ;(function () {
+        try {
+          if (!document.documentElement.hasAttribute('data-pg-ia-disabled')) {
+            window.pgia_small_mq =
+              typeof pgia_small_mq == 'string'
+                ? pgia_small_mq
+                : '(max-width:767px)'
+            window.pgia_large_mq =
+              typeof pgia_large_mq == 'string'
+                ? pgia_large_mq
+                : '(min-width:768px)'
+            var style = document.createElement('style')
+            var pgcss =
+              'html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}'
+            if (
+              document.documentElement.hasAttribute('data-pg-id') &&
+              document.documentElement.hasAttribute('data-pg-mobile')
+            ) {
+              pgia_small_mq = '(min-width:0)'
+              pgia_large_mq = '(min-width:99999px)'
+            }
+            pgcss +=
+              '@media ' +
+              pgia_small_mq +
+              '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}'
+            pgcss +=
+              '@media ' +
+              pgia_large_mq +
+              '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}'
+            style.innerHTML = pgcss
+            document.querySelector('head').appendChild(style)
+          }
+        } catch (e) {
+          console && console.log(e)
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div
+      class="flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50"
+    >
+      <main>
+        <div
+          data-pg-name="Alternate Site Logo"
+          cms-editable="logo_light"
+          cms-editable-type="image"
+          cms-editable-label="Light Logo"
+          cms-editable-section="title_tagline"
+          cms-editable-image-size="full"
+        >
+          <img
+            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+            alt="Company name"
+            class="h-16"
+          />
+        </div>
+        <div
+          class="flex space-x-6"
+          data-pg-name="Social Links"
+          cms-section="social_links"
+          cms-section-title="Social Links"
+        >
+          <div
+            href="#"
+            class="text-gray-500 hover:text-gray-400"
+            cms-editable="facebook_link"
+            cms-editable-type="link"
+            cms-editable-label="Facebook"
+            cms-editable-section="social_links"
+          ></div>
+          <div
+            href="#"
+            class="text-gray-500 hover:text-gray-400"
+            cms-editable-type="link"
+            cms-editable-section="social_links"
+            cms-editable-label="Instagram"
+            cms-editable="instagram_link"
+          ></div>
+          <div
+            href="#"
+            class="text-gray-500 hover:text-gray-400"
+            cms-editable="twitter_link"
+            cms-editable-label="Twitter"
+            cms-editable-section="social_links"
+            cms-editable-type="link"
+          ></div>
+          <div
+            href="#"
+            class="text-gray-500 hover:text-gray-400"
+            cms-editable="github_link"
+            cms-editable-label="Github"
+            cms-editable-section="social_links"
+            cms-editable-type="link"
+          ></div>
+          <div
+            href="#"
+            class="text-gray-500 hover:text-gray-400"
+            cms-editable="youtube_link"
+            cms-editable-label="Youtube"
+            cms-editable-section="social_links"
+            cms-editable-type="link"
+          ></div>
+        </div>
+      </main>
+    </div>
+    <script src="/tailwind_theme/pgia/lib/pgia.js"></script>
+    <script src="/tailwind_theme/js/main.js"></script>
+  </body>
+</html>

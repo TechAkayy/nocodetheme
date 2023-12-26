@@ -126,6 +126,15 @@ function my_first_wp_theme_widgets_init() {
      */
     /* Pinegrow generated Register Sidebars Begin */
 
+    register_sidebar( array(
+        'name' => __( 'Company Information', 'my_first_wp_theme' ),
+        'id' => 'company-information',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widgettitle">',
+        'after_title' => '</h3>'
+    ) );
+
     /* Pinegrow generated Register Sidebars End */
 }
 add_action( 'widgets_init', 'my_first_wp_theme_widgets_init' );
@@ -139,6 +148,78 @@ function my_first_wp_theme_customize_register( $wp_customize ) {
     // Do stuff with $wp_customize, the WP_Customize_Manager object.
 
     /* Pinegrow generated Customizer Controls Begin */
+
+    $wp_customize->add_section( 'social_links', array(
+        'title' => __( 'Social Links', 'my_first_wp_theme' )
+    ));
+    $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
+
+    $wp_customize->add_setting( 'logo_light', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'logo_light', array(
+        'label' => __( 'Light Logo', 'my_first_wp_theme' ),
+        'type' => 'media',
+        'mime_type' => 'image',
+        'section' => 'title_tagline'
+    ) ) );
+
+    $wp_customize->add_setting( 'facebook_link', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'facebook_link', array(
+        'label' => __( 'Facebook', 'my_first_wp_theme' ),
+        'type' => 'url',
+        'section' => 'social_links'
+    ));
+
+    $wp_customize->add_setting( 'instagram_link', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'instagram_link', array(
+        'label' => __( 'Instagram', 'my_first_wp_theme' ),
+        'type' => 'url',
+        'section' => 'social_links'
+    ));
+
+    $wp_customize->add_setting( 'twitter_link', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'twitter_link', array(
+        'label' => __( 'Twitter', 'my_first_wp_theme' ),
+        'type' => 'url',
+        'section' => 'social_links'
+    ));
+
+    $wp_customize->add_setting( 'github_link', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'github_link', array(
+        'label' => __( 'Github', 'my_first_wp_theme' ),
+        'type' => 'url',
+        'section' => 'social_links'
+    ));
+
+    $wp_customize->add_setting( 'youtube_link', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'youtube_link', array(
+        'label' => __( 'Youtube', 'my_first_wp_theme' ),
+        'type' => 'url',
+        'section' => 'social_links'
+    ));
 
     /* Pinegrow generated Customizer Controls End */
 
