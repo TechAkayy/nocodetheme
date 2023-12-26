@@ -102,16 +102,16 @@
       "frameworks": [
         "nocodetheme",
         "pg.tw.lib",
+        "pg.asset.manager",
         "pg.svg.lib",
+        "pg.project.items",
         "pg.insight.events",
+        "pg.code-validator",
         "pg.ia.lib",
         "wordpress.pinegrow",
+        "pg.image.overlay",
         "pg.ia",
         "pg.css.grid",
-        "pg.image.overlay",
-        "pg.code-validator",
-        "pg.project.items",
-        "pg.asset.manager",
         "tw",
         "pg.html",
         "pg.components"
@@ -316,17 +316,17 @@
   "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
   "frameworks": [
     "nocodetheme",
-    "wordpress.pinegrow",
-    "pg.svg.lib",
     "pg.tw.lib",
     "pg.asset.manager",
+    "pg.svg.lib",
     "pg.project.items",
-    "pg.code-validator",
-    "pg.image.overlay",
-    "pg.css.grid",
-    "pg.ia.lib",
     "pg.insight.events",
+    "pg.code-validator",
+    "pg.ia.lib",
+    "wordpress.pinegrow",
+    "pg.image.overlay",
     "pg.ia",
+    "pg.css.grid",
     "tw",
     "pg.html",
     "pg.components"
@@ -422,7 +422,7 @@
   },
   "wp-insight": {
     "menus": ["primary", "social"],
-    "taxonomies": ["category", "post_tag"],
+    "taxonomies": ["category", "departments", "post_tag"],
     "customizer_sections": ["social_links"],
     "customizer_controls": [
       "facebook_link",
@@ -432,7 +432,7 @@
       "twitter_link",
       "youtube_link"
     ],
-    "post_types": ["attachment", "page", "post"],
+    "post_types": ["attachment", "employees", "page", "post"],
     "template_parts": [
       "template-parts/pagination",
       "template-parts/sidebar",

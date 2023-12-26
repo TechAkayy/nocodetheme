@@ -99,12 +99,37 @@ function my_first_wp_theme_init() {
      */
     /* Pinegrow generated Custom Post Types Begin */
 
+    register_post_type('employees', array(
+        'labels' => 
+            array(
+                'name' => __( 'Employees', 'nocodetheme' ),
+                'singular_name' => __( 'Employee', 'nocodetheme' )
+            ),
+        'public' => true,
+        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields', 'revisions', 'page-attributes' ),
+        'has_archive' => true,
+        'show_in_rest' => true,
+        'show_in_menu' => true,
+        'menu_icon' => 'dashicons-businessperson',
+        'menu_position' => 20
+    ));
+
     /* Pinegrow generated Custom Post Types End */
     
     /*
      * Register custom taxonomies. You can also move this code to a plugin.
      */
     /* Pinegrow generated Taxonomies Begin */
+
+    register_taxonomy('departments', 'employees', array(
+        'labels' => 
+            array(
+                'name' => __( 'Departments', 'nocodetheme' ),
+                'singular_name' => __( 'Department', 'nocodetheme' )
+            ),
+        'show_in_rest' => true,
+        'hierarchical' => true
+    ));
 
     /* Pinegrow generated Taxonomies End */
 
