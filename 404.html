@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" wp-template wp-template-export-as="404.php">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Pinegrow Vite Tailwind CSS - Quick start template</title>
+        <link href="/tailwind_theme/tailwind.css" rel="stylesheet"/>
+        <link rel="pg-require" href="projectdb.pgml"/>
+        <link rel="pg-require" href="pinegrow.json"/>
+        <script>
+      /* Pinegrow Interactions, do not remove */ ;(function () {
+        try {
+          if (!document.documentElement.hasAttribute('data-pg-ia-disabled')) {
+            window.pgia_small_mq =
+              typeof pgia_small_mq == 'string'
+                ? pgia_small_mq
+                : '(max-width:767px)'
+            window.pgia_large_mq =
+              typeof pgia_large_mq == 'string'
+                ? pgia_large_mq
+                : '(min-width:768px)'
+            var style = document.createElement('style')
+            var pgcss =
+              'html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}'
+            if (
+              document.documentElement.hasAttribute('data-pg-id') &&
+              document.documentElement.hasAttribute('data-pg-mobile')
+            ) {
+              pgia_small_mq = '(min-width:0)'
+              pgia_large_mq = '(min-width:99999px)'
+            }
+            pgcss +=
+              '@media ' +
+              pgia_small_mq +
+              '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}'
+            pgcss +=
+              '@media ' +
+              pgia_large_mq +
+              '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}'
+            style.innerHTML = pgcss
+            document.querySelector('head').appendChild(style)
+          }
+        } catch (e) {
+          console && console.log(e)
+        }
+      })()
+    </script>
+    </head>
+    <body>
+        <div class="flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50" wp-site-content>
+            <main>
+                <div>
+                    <main class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
+                        <div class="text-center">
+                            <p class="text-base font-semibold text-indigo-600">404</p>
+                            <h1 class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Page not found</h1>
+                            <p class="mt-6 text-base leading-7 text-gray-600">Sorry, we couldn’t find the page you’re looking for.</p>
+                            <div class="mt-10 flex items-center justify-center gap-x-6"><a href="/" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back home</a><a href="#" class="text-sm font-semibold text-gray-900">Contact support <span aria-hidden="true">&rarr;</span></a>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </main>
+        </div>
+        <script src="/tailwind_theme/pgia/lib/pgia.js"></script>
+        <script src="/tailwind_theme/js/main.js"></script>
+    </body>
+</html>
