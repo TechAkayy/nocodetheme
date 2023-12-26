@@ -19,6 +19,7 @@ if ( ! function_exists('nocodetheme_blocks_init') ) :
 function nocodetheme_blocks_init() {
     // Register blocks. Don't edit anything between the following comments.
     /* Pinegrow generated Register Pinegrow Blocks Begin */
+    require_once 'blocks/hero-block/hero-block_register.php';
     require_once 'blocks/employee-grid/employee-grid_register.php';
     require_once 'blocks/contact-form/contact-form_register.php';
 

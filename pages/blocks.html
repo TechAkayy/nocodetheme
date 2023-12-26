@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" wp-template wp-template-no-export>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <title>Pinegrow Vite Tailwind CSS - Quick start template</title>
-        <link href="/tailwind_theme/tailwind.css" rel="stylesheet"/>
-        <link rel="pg-require" href="projectdb.pgml"/>
-        <link rel="pg-require" href="pinegrow.json"/>
-        <script>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Pinegrow Vite Tailwind CSS - Quick start template</title>
+    <link href="/tailwind_theme/tailwind.css" rel="stylesheet" />
+    <link rel="pg-require" href="projectdb.pgml" />
+    <link rel="pg-require" href="pinegrow.json" />
+    <script>
       /* Pinegrow Interactions, do not remove */ ;(function () {
         try {
           if (!document.documentElement.hasAttribute('data-pg-ia-disabled')) {
@@ -45,126 +48,492 @@
         }
       })()
     </script>
-    </head>
-    <body>
-        <div class="flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50">
+  </head>
+  <body>
+    <div
+      class="flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50"
+    >
+      <main>
+        <section data-pg-name="Hero Section">
+          <div
+            cms-block="hero-block"
+            cms-block-title="Hero Block"
+            cms-block-icon="superhero"
+            cms-block-editor-style="tailwind_theme/tailwind_for_wp_editor.css"
+            cms-block-category="custom"
+            cms-block-category-custom="custom-blocks"
+          >
             <main>
-                <section data-pg-name="Employee Grid">
-                    <div cms-block="employee-grid" cms-block-title="Employee Grid" cms-block-category="custom" cms-block-category-custom="custom-blocks" cms-block-category-custom-register="true" cms-block-category-custom-register-name="Custom Blocks" cms-block-icon="admin-users" cms-block-editor-style="tailwind_theme/tailwind_for_wp_editor.css">
-                        <div class="bg-white py-6 sm:py-4">
-                            <div class="mx-auto max-w-7xl px-6 lg:px-8" cms-post="query" cms-post-type="employees" cms-post-type-order="title ASC" cms-post-type-count="6" cms-post-items-container="ul" cms-post-repeat="li">
-                                <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none">
-                                    <li class="flex flex-col gap-6 xl:flex-row">
-                                        <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="" cms-post-image="medium" wp-if-has-post-thumbnail/>
-                                        <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="" wp-if-has-post-thumbnail="!"/>
-                                        <div class="flex-auto"><a href="" cms-post-link class="hover:text-blue-800 text-blue-600 underline visited:text-purple-600"><h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900" cms-post-title>
-                          Leonard Krasner </h3></a><a class="hover:text-blue-800 text-blue-600 underline visited:text-purple-600" cms-tags="departments" cms-tags-display="this" cms-tags-delimiter=", " wp-if-in-category="!Uncategorized">Senior Designer</a>
-                                            <p class="mt-6 text-base leading-7 text-gray-600" cms-post-excerpt>
+              <div class="relative isolate">
+                <svg
+                  class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+                  aria-hidden="true"
+                >
+                  <defs>
+                    <pattern
+                      id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
+                      width="200"
+                      height="200"
+                      x="50%"
+                      y="-1"
+                      patternUnits="userSpaceOnUse"
+                    >
+                      <path d="M.5 200V.5H200" fill="none" />
+                    </pattern>
+                  </defs>
+                  <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+                    <path
+                      d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+                      stroke-width="0"
+                    />
+                  </svg>
+                  <rect
+                    width="100%"
+                    height="100%"
+                    stroke-width="0"
+                    fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
+                  />
+                </svg>
+                <div
+                  class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                    style="
+                      clip-path: polygon(
+                        63.1% 29.5%,
+                        100% 17.1%,
+                        76.6% 3%,
+                        48.4% 0%,
+                        44.6% 4.7%,
+                        54.5% 25.3%,
+                        59.8% 49%,
+                        55.2% 57.8%,
+                        44.4% 57.2%,
+                        27.8% 47.9%,
+                        35.1% 81.5%,
+                        0% 97.7%,
+                        39.2% 100%,
+                        35.2% 81.4%,
+                        97.2% 52.8%,
+                        63.1% 29.5%
+                      );
+                    "
+                  ></div>
+                </div>
+                <div class="overflow-hidden">
+                  <div
+                    class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32"
+                  >
+                    <div
+                      class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
+                    >
+                      <div
+                        class="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl"
+                      >
+                        <h1
+                          class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+                        >
+                          We’re changing the way people connect.
+                        </h1>
+                        <p
+                          class="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none"
+                        >
+                          Cupidatat minim id magna ipsum sint dolor qui. Sunt
+                          sit in quis cupidatat mollit aute velit. Et labore
+                          commodo nulla aliqua proident mollit ullamco
+                          exercitation tempor. Sint aliqua anim nulla sunt
+                          mollit id pariatur in voluptate cillum.
+                        </p>
+                        <div class="mt-10 flex items-center gap-x-6">
+                          <a
+                            href="#"
+                            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            >Get started</a
+                          ><a
+                            href="#"
+                            class="text-sm font-semibold leading-6 text-gray-900"
+                            >Live demo <span aria-hidden="true">→</span></a
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0"
+                      >
+                        <div
+                          class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"
+                        >
+                          <div class="relative">
+                            <img
+                              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                              alt=""
+                              class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                            />
+                            <div
+                              class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36"
+                        >
+                          <div class="relative">
+                            <img
+                              src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                              alt=""
+                              class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                            />
+                            <div
+                              class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                            ></div>
+                          </div>
+                          <div class="relative">
+                            <img
+                              src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+                              alt=""
+                              class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                            />
+                            <div
+                              class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+                          <div class="relative">
+                            <img
+                              src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+                              alt=""
+                              class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                            />
+                            <div
+                              class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                            ></div>
+                          </div>
+                          <div class="relative">
+                            <img
+                              src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                              alt=""
+                              class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                            />
+                            <div
+                              class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </section>
+        <section data-pg-name="Employee Grid">
+          <div
+            cms-block="employee-grid"
+            cms-block-title="Employee Grid"
+            cms-block-category="custom"
+            cms-block-category-custom="custom-blocks"
+            cms-block-category-custom-register="true"
+            cms-block-category-custom-register-name="Custom Blocks"
+            cms-block-icon="admin-users"
+            cms-block-editor-style="tailwind_theme/tailwind_for_wp_editor.css"
+          >
+            <div class="bg-white py-6 sm:py-4">
+              <div class="mx-auto max-w-2xl text-center">
+                <h2
+                  class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                >
+                  Meet Our Leadership Team
+                </h2>
+                <p class="mt-2 text-lg leading-8 text-gray-600">
+                  We’re a dynamic group of individuals who are passionate about
+                  what we do and dedicated to delivering the best results for
+                  our clients.
+                </p>
+              </div>
+              <div
+                class="mx-auto max-w-7xl px-6 lg:px-8"
+                cms-post="query"
+                cms-post-type="employees"
+                cms-post-type-order="title ASC"
+                cms-post-type-count="6"
+                cms-post-items-container="ul"
+                cms-post-repeat="li"
+              >
+                <ul
+                  role="list"
+                  class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
+                >
+                  <li class="flex flex-col gap-6 xl:flex-row">
+                    <img
+                      class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                      alt=""
+                      cms-post-image="medium"
+                      wp-if-has-post-thumbnail
+                    />
+                    <img
+                      class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                      alt=""
+                      wp-if-has-post-thumbnail="!"
+                    />
+                    <div class="flex-auto">
+                      <a
+                        href=""
+                        cms-post-link
+                        class="hover:text-blue-800 text-blue-600 underline visited:text-purple-600"
+                        ><h3
+                          class="text-lg font-semibold leading-8 tracking-tight text-gray-900"
+                          cms-post-title
+                        >
+                          Leonard Krasner
+                        </h3></a
+                      ><a
+                        class="hover:text-blue-800 text-blue-600 underline visited:text-purple-600"
+                        cms-tags="departments"
+                        cms-tags-display="this"
+                        cms-tags-delimiter=", "
+                        wp-if-in-category="!Uncategorized"
+                        >Senior Designer</a
+                      >
+                      <p
+                        class="mt-6 text-base leading-7 text-gray-600"
+                        cms-post-excerpt
+                      >
                         Quia illum aut in beatae. Possimus dolores aliquid
                         accusantium aut in ut non assumenda. Enim iusto
                         molestias aut deleniti eos aliquid magnam molestiae. At
-                        et non possimus ab. Magni labore molestiae nulla qui. </p>
-                                        </div>
-                                    </li>
-                                    <!-- More people... -->
-                                </ul>
-                            </div>
-                        </div>
+                        et non possimus ab. Magni labore molestiae nulla qui.
+                      </p>
                     </div>
-                </section>
-                <section data-pg-name="Contact Form">
-                    <div cms-block="contact-form" cms-block-title="Contact Form" cms-block-icon="email" cms-block-category="custom" cms-block-category-custom="custom-blocks" cms-block-editor-style="tailwind_theme/tailwind_for_wp_editor.css">
-                        <div cms-form="contact_form" cms-form-send-email="true" cms-form-save-as-post-type="true" cms-form-post-type="contact_form" cms-form-post-type-register cms-form-post-type-name="Contact Form Entries" cms-form-post-type-name-singular="Contact Form Entry" cms-form-subject="Contact form submission" cms-form-intro="We received a new contact form submission " cms-form-success-element="> div > div:nth-of-type(2)" cms-form-error-element="> div > div:nth-of-type(3)">
-                            <div class="bg-white isolate px-6 py-10 sm:py-10 lg:px-8">
-                                <div class="mx-auto max-w-2xl text-center">
-                                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    Contact sales </h2>
-                                    <p class="mt-2 text-lg leading-8 text-gray-600">
+                  </li>
+                  <!-- More people... -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-pg-name="Contact Form">
+          <div
+            cms-block="contact-form"
+            cms-block-title="Contact Form"
+            cms-block-icon="email"
+            cms-block-category="custom"
+            cms-block-category-custom="custom-blocks"
+            cms-block-editor-style="tailwind_theme/tailwind_for_wp_editor.css"
+          >
+            <div
+              cms-form="contact_form"
+              cms-form-send-email="true"
+              cms-form-save-as-post-type="true"
+              cms-form-post-type="contact_form"
+              cms-form-post-type-register
+              cms-form-post-type-name="Contact Form Entries"
+              cms-form-post-type-name-singular="Contact Form Entry"
+              cms-form-subject="Contact form submission"
+              cms-form-intro="We received a new contact form submission "
+              cms-form-success-element="> div > div:nth-of-type(2)"
+              cms-form-error-element="> div > div:nth-of-type(3)"
+            >
+              <div class="bg-white isolate px-6 py-10 sm:py-10 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                  <h2
+                    class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                  >
+                    Contact sales
+                  </h2>
+                  <p class="mt-2 text-lg leading-8 text-gray-600">
                     Aute magna irure deserunt veniam aliqua magna enim
-                    voluptate. </p>
-                                </div>
-                                <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
-                                    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                                        <div>
-                                            <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
-                                            <div class="mt-2.5">
-                                                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required="true"/>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
-                                            <div class="mt-2.5">
-                                                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
-                                            </div>
-                                        </div>
-                                        <div class="sm:col-span-2">
-                                            <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
-                                            <div class="mt-2.5">
-                                                <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
-                                            </div>
-                                        </div>
-                                        <div class="sm:col-span-2">
-                                            <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
-                                            <div class="mt-2.5">
-                                                <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required="true"/>
-                                            </div>
-                                        </div>
-                                        <div class="sm:col-span-2">
-                                            <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
-                                            <div class="relative mt-2.5">
-                                                <div class="absolute inset-y-0 left-0 flex items-center">
-                                                    <label for="country" class="sr-only">Country</label>
-                                                    <select id="country" name="country" class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
-                                                        <option>US</option>
-                                                        <option>CA</option>
-                                                        <option>EU</option>
-                                                    </select>
-                                                    <svg class="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
-                                                    </svg>
-                                                </div>
-                                                <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
-                                            </div>
-                                        </div>
-                                        <div class="sm:col-span-2">
-                                            <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
-                                            <div class="mt-2.5">
-                                                <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="flex gap-x-4 hidden sm:col-span-2">
-                                            <div class="flex h-6 items-center">
-                                                <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
-                                                <button type="button" class="bg-gray-200 flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" role="switch" aria-checked="false" aria-labelledby="switch-1-label"><span class="sr-only">Agree to policies</span>
-                                                    <!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" --><span aria-hidden="true" class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
-                                                </button>
-                                            </div>
-                                            <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
-                                                By selecting this, you agree to our<a href="#" class="font-semibold text-indigo-600">privacy&nbsp;policy</a>.
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="mt-10">
-                                        <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                                            Let's talk
-</button>
-                                    </div>
-                                </form>
-                                <div class="mt-4 text-center">
-                                    <p>Thank you! You message was successfully submitted.</p>
-                                </div>
-                                <div class="mt-4 text-center">
-                                    <p>
-                    There was an error submitting your form. Please call us
-                    instead! </p>
-                                </div>
-                            </div>
-                        </div>
+                    voluptate.
+                  </p>
+                </div>
+                <form
+                  action="#"
+                  method="POST"
+                  class="mx-auto mt-16 max-w-xl sm:mt-20"
+                >
+                  <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                    <div>
+                      <label
+                        for="first-name"
+                        class="block text-sm font-semibold leading-6 text-gray-900"
+                        >First name</label
+                      >
+                      <div class="mt-2.5">
+                        <input
+                          type="text"
+                          name="first-name"
+                          id="first-name"
+                          autocomplete="given-name"
+                          class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          required="true"
+                        />
+                      </div>
                     </div>
-                </section>
-            </main>
-        </div>
-        <script src="/tailwind_theme/pgia/lib/pgia.js"></script>
-        <script src="/tailwind_theme/js/main.js"></script>
-    </body>
+                    <div>
+                      <label
+                        for="last-name"
+                        class="block text-sm font-semibold leading-6 text-gray-900"
+                        >Last name</label
+                      >
+                      <div class="mt-2.5">
+                        <input
+                          type="text"
+                          name="last-name"
+                          id="last-name"
+                          autocomplete="family-name"
+                          class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        />
+                      </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                      <label
+                        for="company"
+                        class="block text-sm font-semibold leading-6 text-gray-900"
+                        >Company</label
+                      >
+                      <div class="mt-2.5">
+                        <input
+                          type="text"
+                          name="company"
+                          id="company"
+                          autocomplete="organization"
+                          class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        />
+                      </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                      <label
+                        for="email"
+                        class="block text-sm font-semibold leading-6 text-gray-900"
+                        >Email</label
+                      >
+                      <div class="mt-2.5">
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          autocomplete="email"
+                          class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          required="true"
+                        />
+                      </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                      <label
+                        for="phone-number"
+                        class="block text-sm font-semibold leading-6 text-gray-900"
+                        >Phone number</label
+                      >
+                      <div class="relative mt-2.5">
+                        <div
+                          class="absolute inset-y-0 left-0 flex items-center"
+                        >
+                          <label for="country" class="sr-only">Country</label>
+                          <select
+                            id="country"
+                            name="country"
+                            class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                          >
+                            <option>US</option>
+                            <option>CA</option>
+                            <option>EU</option>
+                          </select>
+                          <svg
+                            class="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </div>
+                        <input
+                          type="tel"
+                          name="phone-number"
+                          id="phone-number"
+                          autocomplete="tel"
+                          class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        />
+                      </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                      <label
+                        for="message"
+                        class="block text-sm font-semibold leading-6 text-gray-900"
+                        >Message</label
+                      >
+                      <div class="mt-2.5">
+                        <textarea
+                          name="message"
+                          id="message"
+                          rows="4"
+                          class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="flex gap-x-4 hidden sm:col-span-2">
+                      <div class="flex h-6 items-center">
+                        <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
+                        <button
+                          type="button"
+                          class="bg-gray-200 flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                          role="switch"
+                          aria-checked="false"
+                          aria-labelledby="switch-1-label"
+                        >
+                          <span class="sr-only">Agree to policies</span>
+                          <!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
+                          <span
+                            aria-hidden="true"
+                            class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"
+                          ></span>
+                        </button>
+                      </div>
+                      <label
+                        class="text-sm leading-6 text-gray-600"
+                        id="switch-1-label"
+                      >
+                        By selecting this, you agree to our<a
+                          href="#"
+                          class="font-semibold text-indigo-600"
+                          >privacy&nbsp;policy</a
+                        >.
+                      </label>
+                    </div>
+                  </div>
+                  <div class="mt-10">
+                    <button
+                      type="submit"
+                      class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    >
+                      Let's talk
+                    </button>
+                  </div>
+                </form>
+                <div class="mt-4 text-center">
+                  <p>Thank you! You message was successfully submitted.</p>
+                </div>
+                <div class="mt-4 text-center">
+                  <p>
+                    There was an error submitting your form. Please call us
+                    instead!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/tailwind_theme/pgia/lib/pgia.js"></script>
+    <script src="/tailwind_theme/js/main.js"></script>
+  </body>
 </html>
