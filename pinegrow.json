@@ -7,11 +7,11 @@
         "pg.tw.lib",
         "pg.asset.manager",
         "pg.project.items",
-        "wordpress.pinegrow",
-        "pg.svg.lib",
         "pg.code-validator",
         "pg.image.overlay",
         "pg.css.grid",
+        "wordpress.pinegrow",
+        "pg.svg.lib",
         "pg.ia.lib",
         "pg.insight.events",
         "pg.ia",
@@ -531,17 +531,17 @@
   "frameworks": [
     "nocodetheme-wp",
     "pg.tree.painter",
-    "pg.asset.manager",
     "pg.tw.lib",
+    "pg.asset.manager",
     "pg.project.items",
     "pg.code-validator",
-    "pg.svg.lib",
     "pg.image.overlay",
     "pg.css.grid",
+    "wordpress.pinegrow",
+    "pg.svg.lib",
+    "pg.ia.lib",
     "pg.insight.events",
     "pg.ia",
-    "pg.ia.lib",
-    "wordpress.pinegrow",
     "tw.flowbite",
     "tw",
     "pg.html",
@@ -552,10 +552,14 @@
   "template_framework_id": "vue",
   "design-settings": {
     "mode": "external",
-    "external_source_url": "file:///Users/techakayy/Projects/pg/vite/tailwindcss/nocodetheme/src/assets/css/tailwind.css",
-    "external_config_path": "/Users/techakayy/Projects/pg/vite/tailwindcss/nocodetheme/tailwind.config.js",
-    "external_theme_path": "/Users/techakayy/Projects/pg/vite/tailwindcss/nocodetheme/themes/pg-tailwindcss/tokens.cjs",
-    "external_help": null
+    "external_source_url": "src/assets/css/tailwind.css",
+    "external_config_path": "tailwind.config.js",
+    "external_theme_path": "themes/pg-tailwindcss/tokens.cjs",
+    "external_help": null,
+    "custom_config": null,
+    "add_setting": null,
+    "custom_source_url": null,
+    "disable_preflight": null
   },
   "recent-classes": [
     "w-fit",
@@ -691,5 +695,6 @@
     "tailwind_theme": "true",
     "": "true",
     "tailwind_theme/tailwind_for_wp_editor.css": "true"
-  }
+  },
+  "automatic-tailwindcss-builder": true
 }
