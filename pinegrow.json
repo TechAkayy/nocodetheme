@@ -2,11 +2,12 @@
   "files": {
     "index.html": {
       "frameworks": [
-        "nocodetheme",
-        "wordpress.pinegrow",
-        "pg.svg.lib",
+        "nocodetheme-wp",
+        "pg.tree.painter",
         "pg.tw.lib",
         "pg.asset.manager",
+        "wordpress.pinegrow",
+        "pg.svg.lib",
         "pg.project.items",
         "pg.code-validator",
         "pg.image.overlay",
@@ -14,6 +15,7 @@
         "pg.ia.lib",
         "pg.insight.events",
         "pg.ia",
+        "tw.flowbite",
         "tw",
         "pg.html",
         "pg.components"
@@ -422,11 +424,13 @@
       ]
     }
   },
-  "open-pages": ["index.html", "pages/blocks.html"],
+  "open-pages": ["index.html"],
   "urls": {
     "index.html": {
       "open-with-wrapper": false,
-      "open-page-views": [{ "w": 1024, "h": 0 }]
+      "open-page-views": [
+        { "w": 1280, "h": 0, "wrapper_selector": "auto_detect" }
+      ]
     },
     "src/pages/home.html": {
       "open-with-wrapper": false,
@@ -523,18 +527,20 @@
   },
   "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
   "frameworks": [
-    "nocodetheme",
+    "nocodetheme-wp",
+    "pg.tree.painter",
     "pg.tw.lib",
     "pg.asset.manager",
+    "wordpress.pinegrow",
+    "pg.svg.lib",
     "pg.project.items",
     "pg.code-validator",
-    "pg.svg.lib",
     "pg.image.overlay",
     "pg.css.grid",
-    "pg.insight.events",
     "pg.ia.lib",
+    "pg.insight.events",
     "pg.ia",
-    "wordpress.pinegrow",
+    "tw.flowbite",
     "tw",
     "pg.html",
     "pg.components"
@@ -631,7 +637,7 @@
     "generator": "true",
     "images": {},
     "blocks_type": "native-auto",
-    "pg_version": "7.9",
+    "pg_version": "8.0",
     "blocks_editor_styles": [],
     "project_type": "theme",
     "blocks_inline_svg": "false",

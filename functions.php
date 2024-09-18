@@ -369,12 +369,21 @@ if ( ! function_exists( 'my_first_wp_theme_enqueue_scripts' ) ) :
     wp_deregister_script( 'nocodetheme-main' );
     wp_enqueue_script( 'nocodetheme-main', get_template_directory_uri() . '/tailwind_theme/js/main.js', [], '0.0.3', true);
 
+    wp_deregister_script( 'nocodetheme-indexeadcaec' );
+    wp_enqueue_script( 'nocodetheme-indexeadcaec', get_template_directory_uri() . '/assets/index-eadca3ec.js', [], '0.0.3', false);
+
+    wp_deregister_script( 'nocodetheme-pgia-1' );
+    wp_enqueue_script( 'nocodetheme-pgia-1', get_template_directory_uri() . '/pgia/lib/pgia.js', [], '0.0.3', true);
+
     /* Pinegrow generated Enqueue Scripts End */
 
         /* Pinegrow generated Enqueue Styles Begin */
 
     wp_deregister_style( 'nocodetheme-tailwind' );
     wp_enqueue_style( 'nocodetheme-tailwind', get_template_directory_uri() . '/tailwind_theme/tailwind.css', [], '0.0.3', 'all');
+
+    wp_deregister_style( 'nocodetheme-indexcece' );
+    wp_enqueue_style( 'nocodetheme-indexcece', get_template_directory_uri() . '/assets/index-cece5007.css', [], '0.0.3', 'all');
 
     wp_deregister_style( 'nocodetheme-style' );
     wp_enqueue_style( 'nocodetheme-style', get_bloginfo('stylesheet_url'), [], '0.0.3', 'all');
