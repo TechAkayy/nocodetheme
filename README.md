@@ -1,5 +1,7 @@
 # Pinegrow External Build Process with Vite - A Community Template
 
+This template was built following Adam Lowe's amazing Wordpress course which he later made it free on youtube [here](https://youtube.com/playlist?list=PLbMkvFuaj0FSYt0flBccIJQ3CNWDSb3MZ&si=OrsYxYo6z-vJzB1r). When following this course, instead of using vanilla css, I used Tailwind CSS and blocks from Tailwind UI.
+
 This vite-powered external build process outputs both `tailwind.css` and `tailwind_for_wp_editor.css`, allowing the latter to be used in WordPress blocks.
 
 While the `tailwind.css` build includes Tailwind preflight, `tailwind_for_wp_editor.css` omits the preflight styles since they do not integrate well with WordPress blocks.
