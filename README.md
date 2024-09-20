@@ -14,6 +14,8 @@ Note that this external build workflow is useful when the primary method of Tail
 
 ## Usage
 
+Along with Pinegrow Web Editor, you require two Pinegrow addons - Wordpress Builder & Tailwind Visual Editor. 
+
 Create a new local-wp instance, or you already have an existing wordpress instance running locally. Create a new `nocodetheme` themes folder, for eg, `/Users/techakayy/Local Sites/new-app/app/public/wp-content/themes/nocodetheme`.
 
 In Pinegrow, setup these variables via menu `Support > Settings`. To learn more about user variables, [click here](https://pinegrow.com/docs/wordpress/actions/theme-settings/#team-collaboration-with-user-variables).
@@ -27,6 +29,17 @@ In your new/existing local-wp wordpress instance, create an application password
 Then, use your username and application password in Pinegrow Wordpress Builder via menu `Wordpress > Theme/Plugin Settings`. Test API access to ensure it works. 
 
 <img width="864" alt="image" src="https://github.com/user-attachments/assets/34702516-56d0-4169-b7bc-3e884ca70c73">
+
+To export theme, use menu `Wordpress > Export the theme`. In the wordpress instance admin, activate the new theme. 
+
+<img width="957" alt="image" src="https://github.com/user-attachments/assets/6b4802e2-e289-469f-b3b5-e4e0723974f2">
+
+Visit your site now. Follow Adam Lowe's free [youtube course](https://www.youtube.com/playlist?list=PLbMkvFuaj0FSYt0flBccIJQ3CNWDSb3MZ) to learn how to build a classic wordpress theme with Pinegrow & Wordpress Builder. 
+
+Use the free tailwindcss blocks that comes with Pinegrow Tailwind addon or any external ones (for eg, https://flowbite.com/blocks/) and use tailwindcss instead of vanilla css when following Adam's course.
+
+<img width="1132" alt="image" src="https://github.com/user-attachments/assets/2a59a320-567d-4549-9b9e-40b73702614f">
+
 
 ### Start the builds in watch mode
 
