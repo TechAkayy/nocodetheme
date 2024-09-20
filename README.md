@@ -14,7 +14,7 @@ Note that this external build workflow is useful when the primary method of Tail
 
 ## Usage
 
-Create a new local-wp instance, or you probably already have an existing wordpress instance locally.
+Create a new local-wp instance, or you probably already have an existing wordpress instance locally. Create a new `nocodetheme` themes folder, for eg, `/Users/techakayy/Local Sites/new-app/app/public/wp-content/themes/nocodetheme`.
 
 In Pinegrow, setup these variables via menu `Support > Settings`. To learn more about user variables, [click here](https://pinegrow.com/docs/wordpress/actions/theme-settings/#team-collaboration-with-user-variables).
 
