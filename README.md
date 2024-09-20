@@ -24,7 +24,7 @@ In Pinegrow, setup these variables via menu `Support > Settings`. To learn more 
 
 <img width="875" alt="image" src="https://github.com/user-attachments/assets/986557c6-5dd9-4c6e-8c46-7c0c2fc66896">
 
-In your new/existing local-wp wordpress instance, create an application password for local development to the use live preview feature of Pinegrow Wordpress Builder. To learn more, [click here](https://pinegrow.com/docs/wordpress/live-preview/). 
+In your new/existing local-wp wordpress instance, create an application password for local development to use the live preview feature of Pinegrow Wordpress Builder. To learn more, [click here](https://pinegrow.com/docs/wordpress/live-preview/). 
 
 <img width="1030" alt="image" src="https://github.com/user-attachments/assets/c0781009-38f4-4e09-be08-364d43d6a8ef">
 
