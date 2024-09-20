@@ -32,7 +32,7 @@ Then, use your username and application password in Pinegrow via menu `Wordpress
 
 <img width="864" alt="image" src="https://github.com/user-attachments/assets/34702516-56d0-4169-b7bc-3e884ca70c73">
 
-To export theme, use menu `Wordpress > Export the theme`. In the wordpress instance admin, activate the new theme. 
+To export theme, use menu `Wordpress > Export the theme`. In your wordpress admin panel, activate the new theme. 
 
 <img width="957" alt="image" src="https://github.com/user-attachments/assets/6b4802e2-e289-469f-b3b5-e4e0723974f2">
 
