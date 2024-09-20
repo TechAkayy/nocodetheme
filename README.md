@@ -36,9 +36,9 @@ To export theme, use menu `Wordpress > Export the theme`. In your wordpress admi
 
 <img width="957" alt="image" src="https://github.com/user-attachments/assets/6b4802e2-e289-469f-b3b5-e4e0723974f2">
 
-Visit your site now. Follow Adam Lowe's free [youtube course](https://www.youtube.com/playlist?list=PLbMkvFuaj0FSYt0flBccIJQ3CNWDSb3MZ) to learn how to build a classic wordpress theme with Pinegrow & Wordpress Builder. 
+Visit your site now (screenshot with the default hello-world post below)!
 
-Use the free tailwindcss blocks that comes with Pinegrow Tailwind addon or any external ones (for eg, https://flowbite.com/blocks/) and use tailwindcss instead of vanilla css when following Adam's course.
+Follow Adam Lowe's free [youtube course](https://www.youtube.com/playlist?list=PLbMkvFuaj0FSYt0flBccIJQ3CNWDSb3MZ) to learn how to build a classic wordpress theme with Pinegrow & Wordpress Builder. Use the free tailwindcss blocks that comes with Pinegrow Tailwind addon or any external ones (for eg, https://flowbite.com/blocks/) and use tailwindcss instead of vanilla css when following Adam's course.
 
 <img width="1132" alt="image" src="https://github.com/user-attachments/assets/2a59a320-567d-4549-9b9e-40b73702614f">
 
