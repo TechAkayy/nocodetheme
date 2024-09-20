@@ -22,7 +22,7 @@ Then, use your username and application password in Pinegrow Wordpress Builder v
 
 <img width="864" alt="image" src="https://github.com/user-attachments/assets/34702516-56d0-4169-b7bc-3e884ca70c73">
 
-Also, setup these variables via menu `Support > Settings`.
+Also, setup these variables via menu `Support > Settings`. To learn more about user variables, [click here](https://pinegrow.com/docs/wordpress/actions/theme-settings/#team-collaboration-with-user-variables). 
 
 <img width="875" alt="image" src="https://github.com/user-attachments/assets/986557c6-5dd9-4c6e-8c46-7c0c2fc66896">
 
