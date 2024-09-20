@@ -14,6 +14,18 @@ Note that this external build workflow is useful when the primary method of Tail
 
 ## Usage
 
+In your new/existing local-wp wordpress instance, create an application password for local development to the use live preview feature of Pinegrow Wordpress Builder. To learn more, [click here](https://pinegrow.com/docs/wordpress/live-preview/). 
+
+<img width="1030" alt="image" src="https://github.com/user-attachments/assets/c0781009-38f4-4e09-be08-364d43d6a8ef">
+
+Then, use your username and application password in Pinegrow Wordpress Builder via menu `Wordpress > Theme/Plugin Settings`.
+
+<img width="864" alt="image" src="https://github.com/user-attachments/assets/34702516-56d0-4169-b7bc-3e884ca70c73">
+
+Also, setup these variables via menu `Support > Settings`.
+
+<img width="875" alt="image" src="https://github.com/user-attachments/assets/986557c6-5dd9-4c6e-8c46-7c0c2fc66896">
+
 ### Start the builds in watch mode
 
 ```bash
