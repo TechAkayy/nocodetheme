@@ -24,7 +24,7 @@ In your new/existing local-wp wordpress instance, create an application password
 
 <img width="1030" alt="image" src="https://github.com/user-attachments/assets/c0781009-38f4-4e09-be08-364d43d6a8ef">
 
-Then, use your username and application password in Pinegrow Wordpress Builder via menu `Wordpress > Theme/Plugin Settings`.
+Then, use your username and application password in Pinegrow Wordpress Builder via menu `Wordpress > Theme/Plugin Settings`. Test API access to ensure it works. 
 
 <img width="864" alt="image" src="https://github.com/user-attachments/assets/34702516-56d0-4169-b7bc-3e884ca70c73">
 
