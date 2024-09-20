@@ -14,6 +14,8 @@ Note that this external build workflow is useful when the primary method of Tail
 
 ## Usage
 
+Firstly, fork/download this repo to your local system. 
+
 Along with Pinegrow Web Editor, you require two Pinegrow addons - Wordpress Builder & Tailwind Visual Editor. 
 
 Create a new local-wp instance (the below screenshots are from my local wordpress site called `nocodetheme`), or you already have an existing wordpress instance running locally. 
