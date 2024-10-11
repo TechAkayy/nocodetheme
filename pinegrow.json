@@ -34,7 +34,8 @@
     "add_setting": null,
     "custom_source_url": null,
     "disable_preflight": null,
-    "external_config_url": "tailwind.config.js"
+    "external_config_url": "tailwind.config.js",
+    "ignore_skill_preflight_setting": "1"
   },
   "class-styles-components": "1",
   "wp-theme-info": {
@@ -100,7 +101,6 @@
     "src": "false",
     "tailwind_theme/tailwind.css": "true",
     "tailwind_theme": "true",
-    "": "true",
     "tailwind_theme/tailwind_for_wp_editor.css": "true"
   },
   "automatic-tailwindcss-builder": false
