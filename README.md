@@ -20,7 +20,7 @@ Note that this external build workflow is useful when the primary method of Tail
 
 3. Create a new `nocodetheme` themes folder, for eg, `/Users/techakayy/Local Sites/nocodetheme/app/public/wp-content/themes/nocodetheme`.
 
-4. In Pinegrow, setup these variables via menu `Support > Settings`. To learn more about user variables, [click here](https://pinegrow.com/docs/wordpress/actions/theme-settings/#team-collaboration-with-user-variables).
+4. Open your project in Pinegrow, and setup these variables via menu `Support > Settings`. To learn more about user variables, [click here](https://pinegrow.com/docs/wordpress/actions/theme-settings/#team-collaboration-with-user-variables).
 
 <img width="875" alt="image" src="https://github.com/user-attachments/assets/986557c6-5dd9-4c6e-8c46-7c0c2fc66896">
 
