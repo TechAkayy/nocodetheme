@@ -18,7 +18,7 @@ Note that this external build workflow is useful when the primary method of Tail
 
 2. From your external terminal / integrated terminal in your code editor (like Visual Studio Code), `cd` to your project root, install dependencies with `npm install`, and start the external build with command `npm run dev`.
 
-3. Create a new local-wp instance (the below screenshots are from my local wordpress site called `nocodetheme`), or you already have an existing wordpress instance running locally. 
+3. Create a new local-wp instance (the below screenshots are from my local wordpress site called `nocodetheme`), or you already have an existing wordpress instance running locally.
 
 4. Create a new `nocodetheme` themes folder, for eg, `/Users/techakayy/Local Sites/nocodetheme/app/public/wp-content/themes/nocodetheme`.
 
@@ -26,19 +26,19 @@ Note that this external build workflow is useful when the primary method of Tail
 
 <img width="875" alt="image" src="https://github.com/user-attachments/assets/986557c6-5dd9-4c6e-8c46-7c0c2fc66896">
 
-6. In your new/existing local-wp wordpress instance, create an application password for local development to use the live preview feature of Pinegrow Wordpress Builder. To learn more, [click here](https://pinegrow.com/docs/wordpress/live-preview/). 
+6. In your new/existing local-wp wordpress instance, create an application password for local development to use the live preview feature of Pinegrow Wordpress Builder. To learn more, [click here](https://pinegrow.com/docs/wordpress/live-preview/).
 
 <img width="1030" alt="image" src="https://github.com/user-attachments/assets/c0781009-38f4-4e09-be08-364d43d6a8ef">
 
-7. Then, use your username and application password in Pinegrow via menu `Wordpress > Theme/Plugin Settings`. Test API access to ensure it works. 
+7. Then, use your username and application password in Pinegrow via menu `Wordpress > Theme/Plugin Settings`. Test API access to ensure it works.
 
 <img width="864" alt="image" src="https://github.com/user-attachments/assets/34702516-56d0-4169-b7bc-3e884ca70c73">
 
-8. To export theme, use menu `Wordpress > Export the theme`. In your wordpress admin panel, activate the new theme. Visit your site now (screenshot with the default hello-world post below)! 
+8. To export theme, use menu `Wordpress > Export the theme`. In your wordpress admin panel, activate the new theme. Visit your site now (screenshot with the default hello-world post below)!
 
 <img width="957" alt="image" src="https://github.com/user-attachments/assets/6b4802e2-e289-469f-b3b5-e4e0723974f2">
 
-9. Follow Adam Lowe's free [youtube course](https://www.youtube.com/playlist?list=PLbMkvFuaj0FSYt0flBccIJQ3CNWDSb3MZ) to learn how to build a classic wordpress theme with Pinegrow & Wordpress Builder. 
+9. Follow Adam Lowe's free [youtube course](https://www.youtube.com/playlist?list=PLbMkvFuaj0FSYt0flBccIJQ3CNWDSb3MZ) to learn how to build a classic wordpress theme with Pinegrow & Wordpress Builder.
 
 10. Use the free tailwindcss blocks that comes with Pinegrow Tailwind addon or any external ones (for eg, https://flowbite.com/blocks/ or https://daisyui.com/components/hero/) and use tailwindcss instead of vanilla css when following Adam's course.
 
